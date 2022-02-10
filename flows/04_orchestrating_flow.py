@@ -31,7 +31,9 @@ with Flow(FLOW_NAME, storage=STORAGE, run_config=LocalRun(labels=["dev"])) as fl
         task_args={"name": "DBT flow"},
     )
     transform_id_wait_task = wait_for_flow_run(
-        transform_id, raise_final_state=True, task_args={"name": "DBT flow - wait"}
+        transform_id,
+        #raise_final_state=True,
+        task_args={"name": "DBT flow - wait"}
     )
     extract_load_wait_task.set_downstream(transform_id)
 
