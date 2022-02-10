@@ -48,7 +48,7 @@ dbt = DbtShellTask(
     log_stderr=True,
     dbt_kwargs={
         "type": "postgres",
-        "host": "tx-node3",
+        "host": "tx-node2",
         "port": 15432,
         "dbname": "postgres",
         "schema": DBT_PROJECT,
