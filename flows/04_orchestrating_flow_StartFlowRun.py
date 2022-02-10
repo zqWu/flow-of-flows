@@ -3,9 +3,9 @@ from prefect.storage import GitHub
 from prefect.tasks.prefect import StartFlowRun
 from prefect.run_configs import LocalRun
 
-FLOW_NAME = "04_orchestrating_flow"
+FLOW_NAME = "04_orchestrating_flow_StartFlowRun"
 STORAGE = GitHub(
-    repo="anna-geller/flow-of-flows",
+    repo="zqWu/flow-of-flows",
     path=f"flows/{FLOW_NAME}.py",
     access_token_secret="GITHUB_ACCESS_TOKEN",
 )
